@@ -1,0 +1,8 @@
+id: org.eclipse.che.editor.custom-theia
+version: 1.0.0
+type: Che Editor
+name: custom-theia-ide
+title: Custom Eclipse Theia for Eclipse Che
+description: Custom Eclipse Theia
+icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+url: https://github.com/eneufeld/che-editor-theia/releases/download/custom-image/che-editor-plugin.tar.gz
