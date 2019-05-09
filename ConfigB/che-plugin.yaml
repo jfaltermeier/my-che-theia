@@ -22,7 +22,7 @@ endpoints:
       type: ide-dev
 containers:
  - name: theia-ide
-   image: eclipse/che-theia:0.3.18-nightly
+   image: gcr.io/kubernetes-238012/my-che-theia:v1337
    env:
        - name: THEIA_PLUGINS
          value: local-dir:///plugins
