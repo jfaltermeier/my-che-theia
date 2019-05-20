@@ -29,7 +29,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: gcr.io/kubernetes-238012/my-che-theia
+     image: gcr.io/kubernetes-238012/my-che-theia:v1337
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
