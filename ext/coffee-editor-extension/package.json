@@ -1,0 +1,48 @@
+{
+  "name": "coffee-editor-extension",
+  "keywords": [
+    "theia-extension"
+  ],
+  "version": "1.0.1",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@jsonforms/core": "2.3.0",
+    "@jsonforms/material-renderers": "2.3.0",
+    "@jsonforms/material-tree-renderer": "2.3.0",
+    "@jsonforms/react": "2.3.0",
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/icons": "^4.0.1",
+    "@modelserver/theia": "next",
+    "@theia/core": "0.7.1",
+    "@theia/filesystem": "0.7.1",
+    "@theia/workspace": "0.7.1",
+    "material-ui-pickers": "^2.2.4",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^6.0.0",
+    "recompose": "^0.27.1",
+    "redux": "^3.7.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "tslint": "^5.5.0",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "lint": "tslint -c ../tslint.json --project ./tsconfig.json",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/coffee-editor-frontend-module"
+    }
+  ],
+  "gitHead": "a2f460b919514b8083ec2eed84c173cdd9b7a91e"
+}
